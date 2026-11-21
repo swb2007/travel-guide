@@ -1,7 +1,7 @@
 body {
 }
 #phone {
-    background-image: url("../images/phone-icon.png");
+    background-image: url("../media/phone-icon.png");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px 20px;
