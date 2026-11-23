@@ -12,6 +12,7 @@ body {
 #query {
     width: 75%;
     max-width: 500px;
-    height: 500px;
+    aspect-ratio: 1 / 1;
     resize: none;
+    box-sizing: border-box;
 }
