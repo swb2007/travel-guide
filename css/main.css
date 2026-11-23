@@ -90,3 +90,25 @@ href {
 .feedbackdivinfo{
     width: 50%;
 }
+
+nav {
+    background-color: #91b8bb;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+href {
+    width: 25%;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    background-color: #91b8bb;
+    transition-duration: 0.25s;
+}
+
+href:hover{
+    color: #006992;
+    background-color: #CFFCFF;
+    transition-duration: 0.25s;
+}
