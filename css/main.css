@@ -87,9 +87,9 @@ nav a:hover {
 }
 
 #logo {
+    display: block;
     width: 50%;
     height: auto;
-    margin: auto;
 }
 
 section {
