@@ -1,6 +1,8 @@
 /* authors: Sean Bartlett, Cathal Hogan, James Phelan, Elliot Pope */
 body {
 }
+
+/* This section makes the phone icon on the contact page to the left and centered of the phone number */
 #phone {
     background-image: url("../media/phone-icon.png");
     background-repeat: no-repeat;
@@ -9,6 +11,7 @@ body {
     padding-left: 28px;
     line-height: 20px;
 }
+/* This section makes the query box on the contact page square, rather than a single line */
 #query {
     width: 75%;
     max-width: 500px;
