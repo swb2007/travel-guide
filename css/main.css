@@ -1,6 +1,10 @@
 /* authors: Sean Bartlett, Cathal Hogan, James Phelan, Elliot Pope */
 body {
     margin: 0 auto;
+    background-image: url("../media/oceanbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 /* This section makes the phone icon on the contact page to the left and centered of the phone number */
