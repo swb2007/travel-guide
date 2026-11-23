@@ -9,3 +9,7 @@ body {
     padding-left: 28px;
     line-height: 20px;
 }
+#query {
+    width: 500px;
+    height: 500px;
+}
