@@ -1,10 +1,4 @@
 /* authors: Sean Bartlett, Cathal Hogan, James Phelan, Elliot Pope */
-body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
 /* This section makes the phone icon on the contact page to the left and centered of the phone number */
 #phone {
