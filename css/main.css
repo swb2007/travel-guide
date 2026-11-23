@@ -79,7 +79,7 @@ nav a:hover {
 /* This section makes the stock image on the contact page look more natural */
 #contact {
     display: block;
-    width: 100%;
+    width: 75%;
     height: auto;
     margin-block: 20px;
     border-radius: 12px;
