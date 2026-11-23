@@ -12,4 +12,5 @@ body {
 #query {
     width: 500px;
     height: 500px;
+    resize: none;
 }
