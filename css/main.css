@@ -1,32 +1,5 @@
 /* authors: Sean Bartlett, Cathal Hogan, James Phelan, Elliot Pope */
 
-/* This section makes the phone icon on the contact page to the left and centered of the phone number */
-#phone {
-    background-image: url("../media/phone-icon.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px 20px;
-    padding-left: 28px;
-    line-height: 20px;
-}
-/* This section makes the query box on the contact page square, rather than a single line */
-#query {
-    width: 75%;
-    max-width: 500px;
-    aspect-ratio: 1 / 1;
-    resize: none;
-    box-sizing: border-box;
-}
-/* This section makes the stock image on the contact page look more natural */
-#contact {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-block: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -86,6 +59,31 @@ nav a {
 nav a:hover {
     color: #006992;
     background-color: #CFFCFF;
+}
+/* This section makes the phone icon on the contact page to the left and centered of the phone number */
+#phone {
+    background-image: url("../media/phone-icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+    line-height: 20px;
+}
+/* This section makes the query box on the contact page square, rather than a single line */
+#query {
+    width: 75%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    resize: none;
+}
+/* This section makes the stock image on the contact page look more natural */
+#contact {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-block: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 section {
