@@ -25,15 +25,86 @@ body {
 }
 /* This section makes the stock image on the contact page look more natural */
 #contact {
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-block: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+body > :not(header):not(nav) {
+    width: min(900px, 100% - 40px);
+    margin-inline: auto;
+}
+
+header {
+    background-color: #4E878C;
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid #415252;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #91b8bb;
+    margin-bottom: 50px;   /* room for the gradient below the bar */
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-image: linear-gradient(#91b8bb, rgba(0, 0, 0, 0));
+    pointer-events: none;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(14px, 3.5vw, 32px);
+    background-color: #91b8bb;
+    transition-duration: 0.25s;
+}
+
+nav a:hover {
+    color: #006992;
+    background-color: #CFFCFF;
+}
+
+section {
+    display: flex;
+    border-radius: 5px;
+    background-color: rgb(233, 255, 253);
+    outline: solid black;
+}
+
+section > div {
+    flex: 1;
+    padding: 0 10px;
+}
 /* ts all james ima comment this later trust*/
 href {
     color: inherit;
