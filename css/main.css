@@ -10,7 +10,7 @@ body {
     line-height: 20px;
 }
 #query {
-    width: 100%;
+    width: 75%;
     max-width: 500px;
     height: 500px;
     resize: none;
