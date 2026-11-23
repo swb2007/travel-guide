@@ -1,6 +1,9 @@
 /* authors: Sean Bartlett, Cathal Hogan, James Phelan, Elliot Pope */
 body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* This section makes the phone icon on the contact page to the left and centered of the phone number */
@@ -19,6 +22,16 @@ body {
     aspect-ratio: 1 / 1;
     resize: none;
     box-sizing: border-box;
+}
+/* This section makes the stock image on the contact page look more natural */
+#contact {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* ts all james ima comment this later trust*/
