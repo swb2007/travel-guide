@@ -97,7 +97,7 @@ section > div {
 /* This section makes the stock image on the contact page look more natural */
 #contact {
     display: block;
-    width: 75%;
+    max-width: 600px;
     height: auto;
     margin-block: 20px;
     border-radius: 12px;
