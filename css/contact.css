@@ -61,12 +61,6 @@ nav a:hover {
     background-color: #CFFCFF;
 }
 
-#logo {
-    display: block;
-    width: 50%;
-    height: auto;
-}
-
 section {
     display: flex;
     border-radius: 5px;
