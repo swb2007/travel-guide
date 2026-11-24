@@ -60,15 +60,6 @@ nav a:hover {
     color: #006992;
     background-color: #CFFCFF;
 }
-/* This section makes the phone icon on the contact page to the left and centered of the phone number */
-#phone {
-    background-image: url("../media/phone-icon.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px 20px;
-    padding-left: 28px;
-    line-height: 20px;
-}
 
 #logo {
     display: block;
