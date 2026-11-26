@@ -1,9 +1,9 @@
 /* authors: James Phelan */
 body {
     margin: 0 auto;
+    font-family: Arial, sans-serif;
 }
 
-/* ts all james ima comment this later trust*/
 body > :not(header):not(nav) {
     width: min(900px, 100% - 40px);
     margin-inline: auto;
@@ -51,6 +51,7 @@ nav a {
     transition-duration: 0.25s;
 }
 
+/* Hover effect for the navbar */
 nav a:hover {
     color: #006992;
     background-color: #CFFCFF;
@@ -75,30 +76,44 @@ nav a:hover {
     height: 5px;
 }
 
+/* The div that houses the feedback information */
 .feedbackdiv{
     border-radius: 5px;
     display: flex;
-    background-image: linear-gradient(#d4fcff, rgb(151, 174, 187));
+    background-color: rgba(255,255,255,0.8);
     width: 75%;
     margin: 0 auto;
-    outline-color: rgb(0, 77, 107);
+    outline-color: rgb(0, 0, 0);
     outline-style: solid;
+    max-height: 33vh;
+    container-type: inline-size;
+    overflow-y: auto;
+}
+
+.feedbackdiv h3 {
+    font-size: clamp(12px, 4cqw, 25px);
+}
+
+.feedbackdiv h2 {
+    font-size: clamp(12px, 4cqw, 25px);
+}
+
+.feedbackdiv th, td {
+    font-size: clamp(8px, 4cqw, 15px);
+    word-wrap: break-word;
+    padding: clamp(0px, 1cqw, 3px)
 }
 
 .feedbacksplit{
     width: 50%;
 }
 
-table {
+.feedbacksplit table {
     table-layout: fixed;
     width: 100%;
 }
 
-th, td {
-    font-size: 20px;
-    overflow-wrap: break-word;
-}
-
+/* For the icons next to the contact information */
 #phone {
     background-image: url("../media/phone-icon.png");
     background-repeat: no-repeat;
