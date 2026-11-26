@@ -191,6 +191,7 @@ section > div {
 @media (max-width: 768px) {
     .slideshow {
         aspect-ratio: 16 / 9;
+        height: auto;
     }
     .slide-btn-1 { left: 40%; }
     .slide-btn-2 { left: 47%; }
@@ -198,5 +199,6 @@ section > div {
     .slide-btn-4 { left: 61%; }
     .slide-img {
         object-position: center center;
+        object-fit: contain;
     }
 }
