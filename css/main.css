@@ -1,19 +1,23 @@
 /* authors: Sean Bartlett, Cathal Hogan, James Phelan, Elliot Pope */
 
+/* Makes the entire page bordered */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
+/* Sets the font for the entire site*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
+/* Sets the width and margin for the entire site excluding the navbar and header*/
 body > :not(header):not(nav) {
     width: min(900px, 100% - 40px);
     margin-inline: auto;
 }
 
+/* Style for the header */
 header {
     background-color: #4E878C;
     color: white;
@@ -21,12 +25,14 @@ header {
     border-bottom: 5px solid #415252;
 }
 
+/* Style for the text inside of the header */
 header h1 {
     margin: 0;
     padding: 20px;
     font-size: clamp(40px, 8vw, 80px);
 }
 
+/* Style for the navbar */
 nav {
     position: relative;
     display: flex;
@@ -35,6 +41,7 @@ nav {
     margin-bottom: 50px;   /* room for the gradient below the bar */
 }
 
+/* Places a gradient below the navbar */
 nav::after {
     content: "";
     position: absolute;
@@ -46,6 +53,7 @@ nav::after {
     pointer-events: none;
 }
 
+/* Style for the page links on the navbar */
 nav a {
     flex: 1;
     text-align: center;
@@ -56,25 +64,15 @@ nav a {
     transition-duration: 0.25s;
 }
 
+/* Style for the navbar links while the mouse hovers over them*/
 nav a:hover {
     color: #006992;
     background-color: #CFFCFF;
 }
 
+/* Sets the dimensions for the logo in index.html */
 #logo {
     display: block;
     width: 50%;
     height: auto;
-}
-
-section {
-    display: flex;
-    border-radius: 5px;
-    background-color: rgb(233, 255, 253);
-    outline: solid black;
-}
-
-section > div {
-    flex: 1;
-    padding: 0 10px;
 }
