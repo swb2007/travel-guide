@@ -9,6 +9,7 @@ body > :not(header):not(nav) {
     margin-inline: auto;
 }
 
+/* css information for the header of the page */
 header {
     background-color: #4E878C;
     color: white;
@@ -22,6 +23,20 @@ header h1 {
     font-size: clamp(40px, 8vw, 80px);
 }
 
+.headerdivider{
+    background-color: #415252;
+    height: 5px;
+}
+
+.pageheader{
+    background-color: #4E878C;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 80px;
+}
+
+/* Navbar css */
 nav {
     position: relative;
     display: flex;
@@ -61,19 +76,6 @@ nav a:hover {
     margin: 0;
     display: grid;
     padding: 0 0;
-}
-
-.pageheader{
-    background-color: #4E878C;
-    text-align: center;
-    margin: 0 auto;
-    color: white;
-    font-size: 80px;
-}
-
-.headerdivider{
-    background-color: #415252;
-    height: 5px;
 }
 
 /* The div that houses the feedback information */
