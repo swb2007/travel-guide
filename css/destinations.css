@@ -187,3 +187,9 @@ section > div {
 .slide-btn:focus {
     background-color: #308d46;
 }
+
+@media (max-width: 768px) {
+    .container {
+        height: 350px;
+    }
+}
