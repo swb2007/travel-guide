@@ -4,9 +4,56 @@ body {
 }
 
 /* ts all james ima comment this later trust*/
-href {
-    color: inherit;
-    margin: 0 auto;
+body > :not(header):not(nav) {
+    width: min(900px, 100% - 40px);
+    margin-inline: auto;
+}
+
+header {
+    background-color: #4E878C;
+    color: white;
+    text-align: center;
+    border-bottom: 5px solid #415252;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #91b8bb;
+    margin-bottom: 50px;   /* room for the gradient below the bar */
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-image: linear-gradient(#91b8bb, rgba(0, 0, 0, 0));
+    pointer-events: none;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: clamp(14px, 3.5vw, 32px);
+    background-color: #91b8bb;
+    transition-duration: 0.25s;
+}
+
+nav a:hover {
+    color: #006992;
+    background-color: #CFFCFF;
 }
 
 .backgroundimg{
@@ -28,47 +75,71 @@ href {
     height: 5px;
 }
 
-.navbartransition{
-    background-image: linear-gradient(#91b8bb, rgba(0,0,0,0));
-    height: 50px;
-}
-
-.navbar {
-  background-color: #91b8bb;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbarhref {
-    width: 25%;
-    text-align: center;
-    color: white;
-    font-size: 200%;
-    background-color: #91b8bb;
-    transition-duration: 0.25s;
-}
-
-.navbarhref:hover{
-    color: #006992;
-    background-color: #CFFCFF;
-    transition-duration: 0.25s;
-}
-
 .feedbackdiv{
     border-radius: 5px;
     display: flex;
-    background-color: rgb(233, 255, 253);
-    width: 50%;
+    background-image: linear-gradient(#d4fcff, rgb(151, 174, 187));
+    width: 75%;
     margin: 0 auto;
-    outline-color: black;
+    outline-color: rgb(0, 77, 107);
     outline-style: solid;
 }
 
-.feedbackdivtext{
+.feedbacksplit{
     width: 50%;
 }
 
-.feedbackdivinfo{
-    width: 50%;
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+th, td {
+    font-size: 20px;
+    overflow-wrap: break-word;
+}
+
+#phone {
+    background-image: url("../media/phone-icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+    line-height: 20px;
+}
+
+#email {
+    background-image: url("../media/email-icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+    line-height: 20px;
+}
+
+#youtubeicon {
+    background-image: url("../media/yt-icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+    line-height: 20px;
+}
+
+#tiktokicon {
+    background-image: url("../media/tiktok-icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+    line-height: 20px;
+}
+
+#instagramicon {
+    background-image: url("../media/instagram-icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 28px;
+    line-height: 20px;
 }
