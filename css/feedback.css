@@ -88,22 +88,21 @@ nav a:hover {
     outline-color: rgb(0, 0, 0);
     outline-style: solid;
     max-height: 33vh;
-    container-type: inline-size;
     overflow-y: auto;
 }
 
 .feedbackdiv h3 {
-    font-size: clamp(12px, 4cqw, 25px);
+    font-size: clamp(12px, 3vw, 25px);
 }
 
 .feedbackdiv h2 {
-    font-size: clamp(12px, 4cqw, 25px);
+    font-size: clamp(12px, 3vw, 25px);
 }
 
-.feedbackdiv th, td {
-    font-size: clamp(8px, 4cqw, 15px);
+.feedbackdiv th, .feedbackdiv td { 
+    with font-size: clamp(8px, 3vw, 15px);
     word-wrap: break-word;
-    padding: clamp(0px, 1cqw, 3px)
+    padding: clamp(0px, 1cqw, 3px);
 }
 
 .feedbacksplit{
