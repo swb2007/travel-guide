@@ -102,7 +102,7 @@ nav a:hover {
 .feedbackdiv th, .feedbackdiv td { 
     font-size: clamp(8px, 3vw, 15px);
     word-wrap: break-word;
-    padding: clamp(0px, 1cqw, 3px);
+    padding: clamp(0px, 0.75vw, 3px);
 }
 
 .feedbacksplit{
