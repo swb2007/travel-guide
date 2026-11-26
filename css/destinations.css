@@ -203,9 +203,7 @@ section > div {
 video {
     display: block;
     width: 90%;
-    max-width: 500px;   /* source video is square, so keep it from stretching */
+    max-width: 500px;
     height: auto;
     margin: 2rem auto;
-    border: 5px solid #415252;   /* same dark teal as the header border */
-    border-radius: 5px;
 }
