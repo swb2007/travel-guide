@@ -114,16 +114,16 @@ section > div {
 
 /* Slideshow styling */
 .slideshow {
-    
+    width: 100%;
     height: auto;
-    aspect-ratio: auto;
+    overflow: hidden;
+    position: relative;
 }
-
-/* Wrapper for the slideshow images */
 .slideshow-wrapper {
     display: flex;
+    width: 400%; /* 4 images -> 400% width */
     height: auto;
-    position: relative; /* Ensure keyframes 'left' works */
+    position: relative;
     left: 0;
     animation: slideshow 20s infinite;
     align-items: center;
