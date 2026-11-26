@@ -190,6 +190,6 @@ section > div {
 
 @media (max-width: 768px) {
     .container {
-        height: 350px;
+        height: 350px !important;
     }
 }
