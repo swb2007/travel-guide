@@ -189,21 +189,11 @@ section > div {
 }
 
 @media (max-width: 768px) {
-    .slideshow {
-        aspect-ratio: 16 / 9;
-        height: auto;
-    }
-    .slide-btn-1 { left: 40%; }
-    .slide-btn-2 { left: 47%; }
-    .slide-btn-3 { left: 54%; }
-    .slide-btn-4 { left: 61%; }
-    .slide-img {
-        object-position: top center;
-        object-fit: contain;
-    }
     .slide {
-        width: 25%;
-        flex-shrink: 0;
         flex: 0 0 25%;
+    }
+
+    .slide-img {
+        object-fit: contain;
     }
 }
