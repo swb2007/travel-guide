@@ -89,16 +89,17 @@
 
 	<!-- script for hidden text -->
 <script>
-	function toggleText(event) {
-		event.preventDefault();
+function toggleText(event) {
+	event.preventDefault();
 
-		let text = document.getElementById("extraText");
-		if (text.style.display === "none") (
-			text.style.display = "block";
+	let text = document.getElementById("extraText");
+
+	if (text.style.display === "none") {
+		text.style.display = "block";
 	} else {
 		text.style.display = "none";
 	}
-	}
+}
 </script>
 </body>
 	
