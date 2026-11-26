@@ -1,0 +1,127 @@
+/* authors: Elliot Pope */
+
+/* Make widths include padding and borders */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the page font, background image, and minimum height */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("../media/mountainrangebg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+}
+
+/* Style the page title area */
+header {
+    background-color: #4E878C;
+    text-align: center;
+    color: white;
+    border-bottom: 5px solid #415252;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    font-size: clamp(40px, 8vw, 80px);
+}
+
+/* Style the navigation bar and its links */
+nav {
+    position: relative;
+    display: flex;
+    background-color: #91b8bb;
+    margin-bottom: 50px;
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(#91b8bb, rgba(0, 0, 0, 0));
+}
+
+nav a {
+    width: 25%;
+    font-size: clamp(14px, 3.5vw, 32px);
+    text-align: center;
+    background-color: #91b8bb;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.25s;
+}
+
+nav a:hover {
+    color: #006992;
+    background-color: #CFFCFF;
+}
+
+/* Keep the boxes positioned within the main content area */
+.page-content {
+    position: relative;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Give both information boxes the same background and border */
+.textbox,
+.infobox {
+    padding: 20px;
+    /* Slightly transparent white: 80% white, 20% background showing through */
+    background-color: rgba(255, 255, 255, 0.80);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.textbox {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.infobox {
+    /* Place this box on the left, lower than the centered box */
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 285px;
+}
+
+.textbox h2,
+.infobox h2 {
+    /* Remove the browser's default space above each heading */
+    margin-top: 0;
+}
+
+/* Stack and resize the boxes on small screens */
+@media (max-width: 600px) {
+    .page-content {
+        width: calc(100% - 40px);
+        margin-block: 30px;
+    }
+
+    .textbox,
+    .infobox {
+        padding: 16px;
+    }
+
+    .textbox {
+        width: 100%;
+    }
+
+    .infobox {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
