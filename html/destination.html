@@ -25,7 +25,7 @@
 	<p> Price: 1,200 - 6,000€
 	<p> Treat your family to a city getaway theyll never forget at one of our luxury hotels in the up and coming Tilted Towers! 
 		<a href = "#" onclick = "toggelText(event)">Would You Like To Know More? </a>
-		<span id = "extraText" style = "display: none;">
+		<div id = "extraText" style = "display: none;">
 			Here are some of our finest locations all across tilted towers! 
 			
 			<ul> 
@@ -34,7 +34,7 @@
 			<li> The Suburbs, in the suburbs of Pleasant Park and Retail Row you can expierience a far quieter way of life, until match day when the streets of Pleasant Park will come alive with Football Fans heading down to the TiltedStadium. *Note that prices are expected to be higher during the Sports Season</li>	
 			</ul>
 	</p>
-
+		</div>
 
 	<!-- Image casserole here -->
 
@@ -88,7 +88,7 @@
 	function toggleText(event) {
 		event.preventDefault();
 
-		let text = document.getElementById("Would You Like To Know More?");
+		let text = document.getElementById("extraText");
 		if (text.style.display === "none") (
 			text.style.display = "inline";
 	} else {
