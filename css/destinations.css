@@ -137,11 +137,11 @@ section > div {
 
 .slide-img {
     display: block;
-    object-fit: contain;
     width: 100%;
     height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
-
 /* Keyframe animations */
 @keyframes slideshow {
     0%, 10% { left: 0; }
