@@ -199,6 +199,5 @@ section > div {
     .slide-btn-4 { left: 61%; }
     .slide-img {
         object-position: center center;
-        object-fit: contain;
     }
 }
