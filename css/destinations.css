@@ -200,4 +200,8 @@ section > div {
     .slide-img {
         object-position: center center;
     }
+    .slide {
+        width: 25%;
+        flex-shrink: 0;
+    }
 }
