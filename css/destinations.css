@@ -78,11 +78,6 @@ section > div {
     flex: 1;
     padding: 0 10px;
 }
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 /* Container styling for centering the content */
 .container {
@@ -93,7 +88,7 @@ section > div {
     margin: auto;
     width: 80%;
     max-width: 800px;
-    height: 600px;
+    height: auto;
 }
 
 /* Main heading styling */
@@ -119,7 +114,9 @@ section > div {
 
 /* Slideshow styling */
 .slideshow {
-    height: 100%;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     position: relative;
 }
