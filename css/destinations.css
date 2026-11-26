@@ -188,6 +188,7 @@ section > div {
     background-color: #308d46;
 }
 
+/* CSS to make the slideshow mobile compatible */
 @media (max-width: 768px) {
     .slide {
         flex: 0 0 25%;
@@ -196,4 +197,15 @@ section > div {
     .slide-img {
         object-fit: contain;
     }
+}
+
+/* Salty Springs video */
+video {
+    display: block;
+    width: 90%;
+    max-width: 500px;   /* source video is square, so keep it from stretching */
+    height: auto;
+    margin: 2rem auto;
+    border: 5px solid #415252;   /* same dark teal as the header border */
+    border-radius: 5px;
 }
