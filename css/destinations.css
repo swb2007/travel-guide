@@ -93,7 +93,7 @@ section > div {
     margin: auto;
     width: 80%;
     max-width: 800px;
-    height: 600px;
+    height: auto;
 }
 
 /* Main heading styling */
